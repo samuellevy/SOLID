@@ -1,0 +1,11 @@
+C:\Estudos\ParallelTest\SOLID\SOLID\bin\Debug\netcoreapp2.2\SOLID.deps.json
+C:\Estudos\ParallelTest\SOLID\SOLID\bin\Debug\netcoreapp2.2\SOLID.runtimeconfig.json
+C:\Estudos\ParallelTest\SOLID\SOLID\bin\Debug\netcoreapp2.2\SOLID.runtimeconfig.dev.json
+C:\Estudos\ParallelTest\SOLID\SOLID\bin\Debug\netcoreapp2.2\SOLID.dll
+C:\Estudos\ParallelTest\SOLID\SOLID\obj\Debug\netcoreapp2.2\SOLID.csprojAssemblyReference.cache
+C:\Estudos\ParallelTest\SOLID\SOLID\obj\Debug\netcoreapp2.2\SOLID.csproj.CoreCompileInputs.cache
+C:\Estudos\ParallelTest\SOLID\SOLID\obj\Debug\netcoreapp2.2\SOLID.RazorAssemblyInfo.cache
+C:\Estudos\ParallelTest\SOLID\SOLID\obj\Debug\netcoreapp2.2\SOLID.RazorAssemblyInfo.cs
+C:\Estudos\ParallelTest\SOLID\SOLID\obj\Debug\netcoreapp2.2\SOLID.AssemblyInfoInputs.cache
+C:\Estudos\ParallelTest\SOLID\SOLID\obj\Debug\netcoreapp2.2\SOLID.AssemblyInfo.cs
+C:\Estudos\ParallelTest\SOLID\SOLID\obj\Debug\netcoreapp2.2\SOLID.RazorTargetAssemblyInfo.cache
