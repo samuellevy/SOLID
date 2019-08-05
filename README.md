@@ -3,11 +3,11 @@
 **S.O.L.I.D** is a simple _C.R.U.D_ following **S.O.L.I.D** principles, make using ASP.Net framework
 
 **S** > Simple Responsability Principle (**SRP**)
-&nbsp;
+<br />
 **O** > Open/Close Principle (**OCP**)
-&nbsp;
+<br />
 **L** > Linskov Substituition Principle (**LSP**)
-&nbsp;
+<br />
 **I** > Interface segregation principle (**ISP**)
-&nbsp;
+<br />
 **D** > Dependency Inversion principle (**DIP**)  
