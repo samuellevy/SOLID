@@ -5,10 +5,9 @@ using System.Threading.Tasks;
 
 namespace SOLID.Mappers
 {
-    public interface IMapper<T, F>
+    public interface IMapper<E, D>
     {
-
-        F From(T to);
-        T To(F from);
+        D ToDto(E entity);
+        E ToEntity(D dto);
     }
 }

@@ -9,3 +9,6 @@ C:\Estudos\ParallelTest\SOLID\SOLID\obj\Debug\netcoreapp2.2\SOLID.RazorAssemblyI
 C:\Estudos\ParallelTest\SOLID\SOLID\obj\Debug\netcoreapp2.2\SOLID.AssemblyInfoInputs.cache
 C:\Estudos\ParallelTest\SOLID\SOLID\obj\Debug\netcoreapp2.2\SOLID.AssemblyInfo.cs
 C:\Estudos\ParallelTest\SOLID\SOLID\obj\Debug\netcoreapp2.2\SOLID.RazorTargetAssemblyInfo.cache
+C:\Estudos\ParallelTest\SOLID\SOLID\bin\Debug\netcoreapp2.2\SOLID.pdb
+C:\Estudos\ParallelTest\SOLID\SOLID\obj\Debug\netcoreapp2.2\SOLID.dll
+C:\Estudos\ParallelTest\SOLID\SOLID\obj\Debug\netcoreapp2.2\SOLID.pdb

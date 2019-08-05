@@ -9,7 +9,7 @@ namespace SOLID.Mappers
 {
     public class UserMapper : IMapper<User, UserDto>
     {
-        public UserDto toDto(User entity)
+        public UserDto ToDto(User entity)
         {
             return new UserDto
             {
@@ -23,7 +23,8 @@ namespace SOLID.Mappers
                 City = entity.City,
                 PostalCode = entity.PostalCode
             };
-    }
+        }
+
 
         public User ToEntity(UserDto dto)
         {

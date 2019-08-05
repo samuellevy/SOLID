@@ -1,4 +1,5 @@
-﻿using SOLID.Context;
+﻿using Microsoft.EntityFrameworkCore;
+using SOLID.Context;
 using SOLID.Dtos;
 using SOLID.Helpers;
 using SOLID.Mappers;
@@ -12,18 +13,19 @@ namespace SOLID.Services
 {
     public class UserService : IService<UserDto, int>
     {
-        private readonly SolidDbContext _context;
-        private readonly UserMapper Mapper;
+        private SolidDbContext _context;
+        private UserMapper Mapper;
 
-        public UserService()
+        public UserService(SolidDbContext context)
         {
+            _context = context;
             Mapper = new UserMapper();
         }
 
         public List<UserDto> FindAll()
         {
             return _context.User
-                .Select(user => Mapper.toDto(user))
+                .Select(user => Mapper.ToDto(user))
                 .ToList();
         }
 
@@ -31,7 +33,7 @@ namespace SOLID.Services
         {
             return _context.User
                 .Where(user => user.Id.Equals(id))
-                .Select(user => Mapper.toDto(user))
+                .Select(user => Mapper.ToDto(user))
                 .First();
         }
 
