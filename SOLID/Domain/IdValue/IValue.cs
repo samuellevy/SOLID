@@ -3,11 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace SOLID.Mappers
+namespace SOLID.Domain.IdValue
 {
-    public interface IMapper<E, D>
+    public abstract class IValue<T>
     {
-        D ToDto(E entity);
-        E ToEntity(D dto);
+        public T Id { get; set; }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using SOLID.Domain.User;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +13,6 @@ namespace SOLID.Context
             : base(options)
         {}
 
-        public DbSet<Models.User> User { get; set; }
+        public DbSet<UserModel> User { get; set; }
     }
 }

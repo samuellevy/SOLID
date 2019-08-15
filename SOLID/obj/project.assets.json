@@ -12943,11 +12943,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Estudos\\ParallelTest\\SOLID\\SOLID\\SOLID.csproj",
+      "projectUniqueName": "C:\\Estudos\\SOLID\\SOLID\\SOLID.csproj",
       "projectName": "SOLID",
-      "projectPath": "C:\\Estudos\\ParallelTest\\SOLID\\SOLID\\SOLID.csproj",
+      "projectPath": "C:\\Estudos\\SOLID\\SOLID\\SOLID.csproj",
       "packagesPath": "C:\\Users\\eduardo.reis\\.nuget\\packages\\",
-      "outputPath": "C:\\Estudos\\ParallelTest\\SOLID\\SOLID\\obj\\",
+      "outputPath": "C:\\Estudos\\SOLID\\SOLID\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

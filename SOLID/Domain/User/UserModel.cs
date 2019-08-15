@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace SOLID.Dtos
+namespace SOLID.Domain.User
 {
-    public class UserDto
+    public class UserModel
     {
         public int Id { get; set; }
         public string FirstName { get; set; }

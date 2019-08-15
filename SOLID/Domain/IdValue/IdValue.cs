@@ -3,15 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace SOLID.Helpers
+namespace SOLID.Domain.IdValue
 {
     public class IdValue<T> : IValue<T>
     {
-        public T Id { get; set; }
-
-        public IdValue(T value)
+        public IdValue(T id)
         {
-            Id = value;
+            Id = id;
         }
     }
 }

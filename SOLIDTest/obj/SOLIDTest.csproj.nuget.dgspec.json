@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Estudos\\ParallelTest\\SOLID\\SOLIDTest\\SOLIDTest.csproj": {}
+    "C:\\Estudos\\SOLID\\SOLIDTest\\SOLIDTest.csproj": {}
   },
   "projects": {
-    "C:\\Estudos\\ParallelTest\\SOLID\\SOLIDTest\\SOLIDTest.csproj": {
+    "C:\\Estudos\\SOLID\\SOLIDTest\\SOLIDTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Estudos\\ParallelTest\\SOLID\\SOLIDTest\\SOLIDTest.csproj",
+        "projectUniqueName": "C:\\Estudos\\SOLID\\SOLIDTest\\SOLIDTest.csproj",
         "projectName": "SOLIDTest",
-        "projectPath": "C:\\Estudos\\ParallelTest\\SOLID\\SOLIDTest\\SOLIDTest.csproj",
+        "projectPath": "C:\\Estudos\\SOLID\\SOLIDTest\\SOLIDTest.csproj",
         "packagesPath": "C:\\Users\\eduardo.reis\\.nuget\\packages\\",
-        "outputPath": "C:\\Estudos\\ParallelTest\\SOLID\\SOLIDTest\\obj\\",
+        "outputPath": "C:\\Estudos\\SOLID\\SOLIDTest\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -31,8 +31,8 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "C:\\Estudos\\ParallelTest\\SOLID\\SOLID\\SOLID.csproj": {
-                "projectPath": "C:\\Estudos\\ParallelTest\\SOLID\\SOLID\\SOLID.csproj"
+              "C:\\Estudos\\SOLID\\SOLID\\SOLID.csproj": {
+                "projectPath": "C:\\Estudos\\SOLID\\SOLID\\SOLID.csproj"
               }
             }
           }
@@ -54,6 +54,10 @@
               "target": "Package",
               "version": "[1.4.0, )"
             },
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[16.0.1, )"
@@ -63,6 +67,10 @@
               "target": "Package",
               "version": "[2.2.0, )",
               "autoReferenced": true
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.12.0, )"
             }
           },
           "imports": [
@@ -73,14 +81,14 @@
         }
       }
     },
-    "C:\\Estudos\\ParallelTest\\SOLID\\SOLID\\SOLID.csproj": {
+    "C:\\Estudos\\SOLID\\SOLID\\SOLID.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Estudos\\ParallelTest\\SOLID\\SOLID\\SOLID.csproj",
+        "projectUniqueName": "C:\\Estudos\\SOLID\\SOLID\\SOLID.csproj",
         "projectName": "SOLID",
-        "projectPath": "C:\\Estudos\\ParallelTest\\SOLID\\SOLID\\SOLID.csproj",
+        "projectPath": "C:\\Estudos\\SOLID\\SOLID\\SOLID.csproj",
         "packagesPath": "C:\\Users\\eduardo.reis\\.nuget\\packages\\",
-        "outputPath": "C:\\Estudos\\ParallelTest\\SOLID\\SOLID\\obj\\",
+        "outputPath": "C:\\Estudos\\SOLID\\SOLID\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
