@@ -1,5 +1,4 @@
 ﻿using SOLID.Domain.IdValue;
-using SOLID.Domain.Model;
 using System.Collections.Generic;
 
 namespace SOLID.Domain.Service

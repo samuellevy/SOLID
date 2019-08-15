@@ -25,3 +25,4 @@ C:\Estudos\SOLID\SOLID\obj\Debug\netcoreapp2.2\SOLID.AssemblyInfo.cs
 C:\Estudos\SOLID\SOLID\obj\Debug\netcoreapp2.2\SOLID.RazorTargetAssemblyInfo.cache
 C:\Estudos\SOLID\SOLID\obj\Debug\netcoreapp2.2\SOLID.dll
 C:\Estudos\SOLID\SOLID\obj\Debug\netcoreapp2.2\SOLID.pdb
+C:\Estudos\SOLID\SOLID\obj\Debug\netcoreapp2.2\SOLID.csprojAssemblyReference.cache
