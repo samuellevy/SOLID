@@ -1,4 +1,10 @@
-.vs
-.vscode
-**/bin
-**/obj
+################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+[Oo]bj/
+[Bb]in/
+SOLID/.vs
+SOLIDTest/.vs
+packages/
