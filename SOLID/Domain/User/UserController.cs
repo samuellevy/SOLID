@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace SOLID.Domain.User
 {
-    [Route("api/[controller]")]
+    [Route("api/users")]
     [ApiController]
-    public class UsersController : ControllerBase
+    public class UserController : ControllerBase
     {
         private IUserService _userService;
       
-        public UsersController(IUserService service)
+        public UserController(IUserService service)
         {
             _userService = service;
         }

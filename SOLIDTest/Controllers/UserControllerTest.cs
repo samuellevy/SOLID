@@ -7,7 +7,7 @@ using System.Collections.Generic;
 namespace SOLIDTest.Controllers
 {
     [TestClass]
-    public class UsersControllerTest
+    public class UserControllerTest
     {
         private Mock<UserService> _userService = new Mock<UserService>(null);
 
@@ -24,7 +24,7 @@ namespace SOLIDTest.Controllers
 
             _userService.Setup(mock => mock.Create(It.IsAny<UserModel>())).Returns(new IdValue<int>(1));
 
-            var controller = new UsersController(_userService.Object);
+            var controller = new UserController(_userService.Object);
 
             var result = controller.Create(newUser);
 
@@ -41,7 +41,7 @@ namespace SOLIDTest.Controllers
 
             _userService.Setup(mock => mock.FindAll()).Returns(users);
 
-            var controller = new UsersController(_userService.Object);
+            var controller = new UserController(_userService.Object);
 
             var result = controller.FindAll();
 
@@ -64,7 +64,7 @@ namespace SOLIDTest.Controllers
 
             _userService.Setup(mock => mock.FindOne(id)).Returns(user);
 
-            var controller = new UsersController(_userService.Object);
+            var controller = new UserController(_userService.Object);
 
             var result = controller.FindOne(id);
 
@@ -88,7 +88,7 @@ namespace SOLIDTest.Controllers
 
             _userService.Setup(mock => mock.Update(id, user)).Returns(new IdValue<int>(1));
 
-            var controller = new UsersController(_userService.Object);
+            var controller = new UserController(_userService.Object);
 
             var result = controller.Update(id, user);
 
