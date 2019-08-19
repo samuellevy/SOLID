@@ -3,6 +3,7 @@ using Moq;
 using SOLID.Domain.IdValue;
 using SOLID.Domain.User;
 using System.Collections.Generic;
+using System.Net;
 
 namespace SOLIDTest.Controllers
 {
@@ -14,7 +15,8 @@ namespace SOLIDTest.Controllers
         [TestMethod]
         public void ShouldSaveNewUser()
         {
-            var newUser = new UserModel() {
+            var newUser = new UserModel()
+            {
 
                 FirstName = "Dummy",
                 LastName = "User",
@@ -30,7 +32,7 @@ namespace SOLIDTest.Controllers
 
             Assert.IsNotNull(result.Value);
             Assert.AreEqual(result.Value.Id, 1);
-            _userService.Verify(mock => mock.Create(It.IsAny<UserModel>()), Times.Once);
+            _userService.Verify(mock => mock.Create(It.IsAny<UserModel>()));
             _userService.VerifyNoOtherCalls();
         }
 
@@ -94,6 +96,20 @@ namespace SOLIDTest.Controllers
 
             Assert.IsNotNull(result.Value);
             _userService.Verify(mock => mock.Update(id, user));
+            _userService.VerifyNoOtherCalls();
+        }
+
+        [TestMethod]
+        [DataRow(1)]
+        public void ShouldDeleteUser(int id)
+        {
+            _userService.Setup(mock => mock.Delete(id)).Returns(true);
+
+            var controller = new UserController(_userService.Object);
+
+            var response = controller.Delete(id);
+
+            _userService.Verify(mock => mock.Delete(id));
             _userService.VerifyNoOtherCalls();
         }
     }

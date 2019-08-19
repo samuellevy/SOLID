@@ -44,7 +44,7 @@ namespace SOLID.Domain.User
         }
 
         [HttpDelete("{id}")]
-        public ActionResult Delete(int id)
+        public ActionResult<bool> Delete(int id)
         {
            var isDeleted = _userService.Delete(id);
 

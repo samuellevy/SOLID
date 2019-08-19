@@ -22,7 +22,7 @@ namespace SOLID.Domain.User
             return new IdValue<int>(result);
         }
 
-        public bool Delete(int id)
+        public virtual bool Delete(int id)
         {
             var user = FindOne(id);
 
