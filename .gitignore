@@ -1,4 +1,4 @@
 .vs
 .vscode
-.Solid/bin
-.SolidTest/bin
+.SOLID/bin
+.SOLIDTest/bin
