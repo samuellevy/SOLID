@@ -38,7 +38,7 @@ namespace SOLID.Domain.User
         }
 
         [HttpPut("{id}")]
-        public ActionResult<IValue<int>> Update(int id, [FromBody] UserModel user)
+        public virtual ActionResult<IValue<int>> Update(int id, [FromBody] UserModel user)
         {
             return _userService.Update(id, user);
         }

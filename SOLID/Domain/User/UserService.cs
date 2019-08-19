@@ -1,8 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
-using SOLID.Context;
+﻿using SOLID.Context;
 using SOLID.Domain.IdValue;
-using SOLID.Domain.Service;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -37,22 +34,20 @@ namespace SOLID.Domain.User
             return false;
         }
 
-        public List<UserModel> FindAll()
+        public virtual List<UserModel> FindAll()
         {
             return _context.User.ToList();
         }
 
-        public UserModel FindOne(int id)
+        public virtual UserModel FindOne(int id)
         {
             return _context.User
                .SingleOrDefault(user => user.Id.Equals(id));
         }
 
-        public IValue<int> Update(int id, UserModel userDto)
+        public virtual IValue<int> Update(int id, UserModel userDto)
         {
-            var userEntity = _context.User
-                .Where(user => user.Id.Equals(id))
-                .First();
+            var userEntity = FindOne(id);
 
             var result = _context.Update(userEntity).Entity;
 

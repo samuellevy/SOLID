@@ -8,29 +8,39 @@ using SOLID.Context;
 using SOLID.Domain;
 using SOLID.Domain.Service;
 using SOLID.Domain.User;
+using System;
 
 namespace SOLID
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        public IConfiguration Configuration { get; }
+        public IHostingEnvironment HostingEnvironment { get; }
+
+        public Startup(IConfiguration configuration, IHostingEnvironment environment)
         {
             Configuration = configuration;
+            HostingEnvironment = environment;
         }
-
-        public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
-            services.AddDbContext<SolidDbContext>(options => options.UseInMemoryDatabase(databaseName: "SolidDatabase"));
+
+            if (HostingEnvironment.IsDevelopment())
+            {
+                services.AddDbContext<SolidDbContext>(options => options.UseInMemoryDatabase(databaseName: "SolidDatabase"));
+            }
+
             services.AddTransient(typeof(IUserService), typeof(UserService));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
