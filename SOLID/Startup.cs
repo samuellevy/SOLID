@@ -6,8 +6,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using SOLID.Context;
 using SOLID.Domain;
-using SOLID.Domain.Service;
 using SOLID.Domain.User;
+using SOLID.Services.User;
 using System;
 
 namespace SOLID

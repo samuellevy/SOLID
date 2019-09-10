@@ -1,9 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using SOLID.Domain.IdValue;
-using System;
+using SOLID.Models.User;
+using SOLID.ObjectValues.IdValue;
+using SOLID.Services.User;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace SOLID.Domain.User
 {

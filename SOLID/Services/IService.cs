@@ -1,7 +1,7 @@
-﻿using SOLID.Domain.IdValue;
+﻿using SOLID.ObjectValues.IdValue;
 using System.Collections.Generic;
 
-namespace SOLID.Domain.Service
+namespace SOLID.Service
 {
     public interface IService<D, I> 
     {

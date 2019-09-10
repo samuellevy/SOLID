@@ -1,9 +1,10 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
-using SOLID.Domain.IdValue;
 using SOLID.Domain.User;
+using SOLID.Models.User;
+using SOLID.ObjectValues.IdValue;
+using SOLID.Services.User;
 using System.Collections.Generic;
-using System.Net;
 
 namespace SOLIDTest.Controllers
 {
@@ -17,7 +18,6 @@ namespace SOLIDTest.Controllers
         {
             var newUser = new UserModel()
             {
-
                 FirstName = "Dummy",
                 LastName = "User",
                 Email = "Dummy@email.com",

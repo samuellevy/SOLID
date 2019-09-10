@@ -1,9 +1,10 @@
 ﻿using SOLID.Context;
-using SOLID.Domain.IdValue;
+using SOLID.Models.User;
+using SOLID.ObjectValues.IdValue;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace SOLID.Domain.User
+namespace SOLID.Services.User
 {
     public class UserService : IUserService
     {
